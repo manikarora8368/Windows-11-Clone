@@ -58,8 +58,7 @@ export default class taskbar extends Component {
             if(minutes< 10){
                 minutes = '0'+minutes;
             }
-            if(hours>11&& hours==12){
-                hours = hours;
+            if(hours>11&& hours===12){
                 time =hours+':' +minutes+ ' PM';
             }
             else if(hours>11){
@@ -81,28 +80,28 @@ export default class taskbar extends Component {
     render() {
         return (
             <div className="taskbar-main">
-                <div className="empty"><div className="rightTaskbarImgMain"><img className="carrot taskbarImg" src={carrot}/></div>
-                    <div className="rightTaskbarImgMain"><img className="taskbarImg" src={wifi}/></div>
-                    <div className="rightTaskbarImgMain"><img className=" battery taskbarImg" src={battery}/></div>
+                <div className="empty"><div className="rightTaskbarImgMain"><img className="carrot taskbarImg" src={carrot} alt=""/></div>
+                    <div className="rightTaskbarImgMain"><img className="taskbarImg" src={wifi} alt=""/></div>
+                    <div className="rightTaskbarImgMain"><img className=" battery taskbarImg" src={battery} alt=""/></div>
                     <div className="dateAndTime rightTaskbarImgMain"> 
                     <div className="time">{this.state.currentTime}</div>
                     <div className="date">{this.state.currentDate}</div>
                     </div></div>
                 <div className="taskbarIcon">
                 <div className="taskbarImgMain">
-                <img className="taskbarImg" src={windowsicon}/>
+                <img className="taskbarImg" src={windowsicon} alt=""/>
                 </div>
                 <div className="taskbarImgMain">
-                <img className="taskbarImg" src={microsoftStore}/>
+                <img className="taskbarImg" src={microsoftStore} alt=""/>
                 </div>
                 <div className="taskbarImgMain">
-                <img className="taskbarImg" src={microsoftEdge}/>
+                <img className="taskbarImg" src={microsoftEdge} alt=""/>
                 </div>
                 <div className="taskbarImgMain searchIcon" onClick={this.SearchClick}>
-                <img className="taskbarImg" src={searchIcon}/>
+                <img className="taskbarImg" src={searchIcon} alt=""/>
                 <div className="Search-main">
                 <div className="search-bar">
-                    <img src={SearchIcon}/>
+                    <img src={SearchIcon} alt=""/>
                     <input type="text" placeholder="Type here to search"/>
                 </div>
                 <div className="Pinned">
@@ -217,22 +216,22 @@ export default class taskbar extends Component {
             </div>
                 </div>
                 <div className="taskbarImgMain widget" onClick={this.widgetClick}>
-                <img className="taskbarImg" src={widgetsIcon}/>
+                <img className="taskbarImg" src={widgetsIcon} alt=""/>
                 <div className="widget-main"></div>
                 </div>
                 <div className="taskbarImgMain">
-                <img className="taskbarImg" src={MicrosoftTeams}/>
+                <img className="taskbarImg" src={MicrosoftTeams} alt=""/>
                 </div>
                 <div className="taskbarImgMain">
-                <img className="taskbarImg" src={fileExplorer}/>
+                <img className="taskbarImg" src={fileExplorer} alt=""/>
                 </div>
                 </div>
                 <div className="right-taskbar">
-                    <div className="rightTaskbarImgMain carrot-main" onClick={this.carrotClick}><img className="carrot taskbarImg" src={carrot}/>
+                    <div className="rightTaskbarImgMain carrot-main" onClick={this.carrotClick}><img className="carrot taskbarImg" src={carrot} alt=""/>
                     <div className="carrot-popup"></div>
                     </div>
-                    <div className="rightTaskbarImgMain"><img className="taskbarImg" src={wifi}/></div>
-                    <div className="rightTaskbarImgMain"><img className=" battery taskbarImg" src={battery}/></div>
+                    <div className="rightTaskbarImgMain"><img className="taskbarImg" src={wifi} alt=""/></div>
+                    <div className="rightTaskbarImgMain"><img className=" battery taskbarImg" src={battery} alt=""/></div>
                     <div className="dateAndTime rightTaskbarImgMain"> 
                     <div className="time">{this.state.currentTime}</div>
                     <div className="date">{this.state.currentDate}</div>

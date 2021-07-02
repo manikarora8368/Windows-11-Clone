@@ -1,1 +1,1 @@
-[Preview: ](https://isthatwindows11clone.netlify.app/)
+[Preview](https://isthatwindows11clone.netlify.app/)

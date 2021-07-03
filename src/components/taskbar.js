@@ -35,10 +35,12 @@ export default class taskbar extends Component {
         super(props);
         this.state={currentDate:'',currentTime:''};
     }
-    SearchClick=()=>{
-        console.log('hello');
+    SearchClick=(e)=>{
         var SearchMain = document.querySelector('.Search-main');
-        SearchMain.classList.toggle('Search-bar-clicked');
+        var SearchClicked = document.querySelector('.searchIcon img');
+        if(e.target === SearchClicked){
+          SearchMain.classList.toggle('Search-bar-clicked');
+        }
     }
     carrotClick=()=>{
         var carrotMain = document.querySelector('.carrot-popup');
